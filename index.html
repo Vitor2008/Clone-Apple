@@ -1,0 +1,76 @@
+<html>
+    <head>
+
+        <!-- Place your kit's code here -->
+        <script src="https://kit.fontawesome.com/2463c70382.js" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+         
+        <header>
+            <nav class="menu-mobile">
+                <a class="btn-close" href="">X</a>
+                <i class="fa-solid fa-bars"></i>
+                <a style="font-size: 19px;" href=""><i class="fa-brands fa-apple"></i></a>
+                <ul class="items-mobile">
+                    <li><a href="a">Mac</a></li>
+                    <li><a href="a">ipad</a></li>
+                    <li><a href="a">Iphone</a></li>
+                    <li><a href="a">Watch</a></li>
+                    <li><a href="a">TV</a></li>
+                    <li><a href="a">Music</a></li>
+                    <li><a href="a">Suporte</a></li>
+                </ul>
+                
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>   
+            </nav>
+
+        
+            <nav class="menu-desktop">
+                <a href=""><i class="fa-brands fa-apple"></i></a>
+                <ul>
+                    <li><a href="a">Mac</a></li>
+                    <li><a href="a">ipad</a></li>
+                    <li><a href="a">Iphone</a></li>
+                    <li><a href="a">Watch</a></li>
+                    <li><a href="a">TV</a></li>
+                    <li><a href="a">Music</a></li>
+                    <li><a href="a">Suporte</a></li>
+                </ul>
+                <a class="search-icon" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>   
+            </nav>
+         </header>
+
+         <section class="demo">
+            <h1>IPhone 14 PRO </h1>
+            <h3>Pro. E além.</h3>
+            <div class="links-compra">
+                <a href="#">Saiba mais ></a>
+                <a href="#">Comprar ></a>
+            </div>
+
+            <img src="phone.png" />
+         </section>
+
+        
+        <script>
+            var el = document.querySelector('.fa-solid');
+            el.addEventListener('click',()=>{
+                let menu = document.querySelector('.items-mobile');
+                if(menu.style.height == "400px"){
+                    menu.style.height = 0;
+                    let btnClose = document.querySelector('.btn-close');
+                    el.style.display = "block";
+                    btnClose.style.display = "none";
+                }else{
+                    menu.style.height = 400;
+                    let btnClose = document.querySelector('.btn-close');
+                    el.style.display = "none";
+                    btnClose.style.display = "block";
+                }
+            });
+         </script>
+
+    </body>
+</html>
